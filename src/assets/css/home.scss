@@ -1,0 +1,346 @@
+.home {
+  .custom-card {
+    border: 2px solid #be9140;
+    text-align: center;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    transition: 200ms all ease-in;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    h5 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28.8px;
+      color: #262626;
+      font-family: "Merriweather";
+      transition: 200ms all ease-in;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25.6px;
+      color: #474747;
+      padding: 0;
+      transition: 200ms all ease-in;
+    }
+    &:hover {
+      background-color: #be9140;
+      p {
+        color: #fff;
+      }
+      h5 {
+        color: #fff;
+      }
+    }
+  }
+  &__cover {
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative !important;
+    height: 100vh;
+    .slick-list {
+      height: 100%;
+    }
+    .slick-slide :first-child {
+      height: 100%;
+    }
+
+    .slick-track {
+      height: 100%;
+    }
+    @media (max-width: 768px) {
+      height: 497px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        object-position: 55% 50%;
+      }
+    }
+
+    &__content {
+      position: absolute;
+      top: 50%;
+      z-index: 9;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 0 16px;
+        top: 50%;
+      }
+      @media (max-width: 1132px) {
+        width: 100%;
+        // top: 50%;
+      }
+      &__title {
+        font-family: "Merriweather";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        text-transform: capitalize;
+        margin-bottom: 12px;
+        @media (max-width: 992px) {
+          font-size: 22px;
+        }
+      }
+      &__intro {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        margin-bottom: 32px;
+        @media (max-width: 992px) {
+          font-size: 16px;
+        }
+      }
+      &__button {
+        width: 160px;
+        height: 42px;
+        border: 2px solid #c5ac52;
+        background: transparent;
+        color: #c5ac52;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        transition: 300ms ease;
+        &:hover {
+          background: #c5ac52;
+          color: white;
+        }
+      }
+    }
+  }
+  &__container {
+    &__about__row {
+      margin-bottom: 60px;
+      padding: 24px 48px;
+      background: #fbfbfb;
+      border: 2px solid #be9140;
+
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        padding: 24px 12px;
+      }
+      @media (max-width: 992px) {
+        padding: 24px 24px;
+      }
+      &__logo {
+        padding: 0;
+        height: max-content;
+        display: flex;
+        justify-content: end;
+        @media (max-width: 768px) {
+          width: 100%;
+          justify-content: center;
+        }
+
+        img {
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+      &__left {
+        padding: 0;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      &__title {
+        font-family: "Merriweather";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        color: #be9140;
+        margin-bottom: 12px;
+        @media (max-width: 768px) {
+          text-align: center;
+          margin-top: 24px;
+        }
+      }
+      &__info {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 28px;
+        text-align: justify;
+        @media (max-width: 768px) {
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+      &__button {
+        border: none;
+        font-style: normal;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #c5ac52;
+        background: transparent;
+
+        &:hover {
+          img {
+            transform: rotateX(200deg);
+          }
+        }
+        &__span {
+          margin-right: 5px;
+          img {
+            transition: 200ms ease-in !important;
+          }
+        }
+      }
+    }
+  }
+
+  .team {
+    text-align: center;
+    margin-bottom: 68px;
+
+    .team__links {
+      text-decoration: none;
+      color: #474747;
+      display: flex !important;
+      justify-content: center;
+    }
+    // .slick-track {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   margin: 0;
+    // }
+    &__slider {
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: space-between;
+
+      &__card {
+        height: 402px;
+        width: 282px !important;
+        background: #fbfbfb;
+        border: 2px solid #be9140;
+
+        &:hover {
+          .team__slider__card__image {
+            padding: 0;
+            &__ul {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+        &__image {
+          height: 334px;
+          overflow: hidden;
+          transition: 200ms ease;
+          padding: 12px 12px 0 12px;
+          position: relative;
+
+          &__ul {
+            position: absolute;
+            bottom: 0;
+            padding-left: 16px;
+            transition: 200ms ease;
+            opacity: 0;
+            visibility: hidden;
+            li {
+              font-family: "Poppins";
+              display: flex;
+              list-style: none;
+              text-align: start;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              color: #fff;
+              img {
+                width: 20px;
+                object-fit: contain;
+                margin-right: 12px;
+              }
+            }
+          }
+          &:hover {
+            &::after {
+              background: #2d4f9d40;
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            transition: 200ms ease;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        &__name {
+          margin-top: 21px;
+          font-family: "Merriweather";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    &__title {
+      font-family: "Merriweather";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      color: #be9140;
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+    &__intro {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #474747;
+      text-transform: capitalize;
+    }
+  }
+}
+.show__all__button {
+  padding: 8px 24px;
+
+  /* Button Color/600 */
+
+  border: 2px solid #c5ac52;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #c5ac52;
+  margin-top: 32px;
+  background: #fff;
+  text-transform: capitalize;
+  transition: 200ms;
+  &:hover {
+    background: #c5ac52;
+    color: white;
+  }
+}
