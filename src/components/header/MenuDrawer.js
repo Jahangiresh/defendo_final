@@ -135,7 +135,7 @@ export default function MenuDrawer() {
               </li>
               <li className="menudrawer__container__down__ul__li">
                 <Link className="link-default" to="/blogs">
-                  <span className="link__span">meqaleler </span>
+                  <span className="link__span">məqalələr </span>
                 </Link>
               </li>
               <li className="menudrawer__container__down__ul__li">

@@ -63,7 +63,7 @@ export default function Settings() {
         <title>setting</title>
       </Helmet>
       <Link
-        to={"/admin/setting/create"}
+        to={"/admindfnd001907/setting/create"}
         style={{
           padding: "5px 10px",
           backgroundColor: "green",
@@ -88,7 +88,7 @@ export default function Settings() {
               settings.map((setting, index) => (
                 <TableRow
                   onClick={() => {
-                    window.location = `/admin/setting/${setting.id}`;
+                    window.location = `/admindfnd001907/setting/${setting.id}`;
                   }}
                   style={{ cursor: "pointer" }}
                   key={setting.id}

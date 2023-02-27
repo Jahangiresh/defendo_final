@@ -11,9 +11,7 @@ const { accessToken } = localStorage.getItem("user")
   : "";
 
 export const slideFetch = createAsyncThunk("slides/slideFetch", async () => {
-  const resp = await axios.get(
-    "https://defendovb.az/api/v1/slides"
-  );
+  const resp = await axios.get("https://defendovb.az/api/v1/slides");
   return resp?.data;
 });
 
@@ -36,18 +34,14 @@ export const createSlide = createAsyncThunk(
   "slides/postApi",
   async (payload) => {
     const response = await axios
-      .post(
-        `https://defendovb.az/api/v1/slides`,
-        payload,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-            Authorization: `Bearer ${accessToken}`,
-          },
-        }
-      )
+      .post(`https://defendovb.az/api/v1/slides`, payload, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          Authorization: `Bearer ${accessToken}`,
+        },
+      })
       .then(() => {
-        window.location = "/admin/slides";
+        window.location = "/admindfnd001907/slides";
       })
       .catch((err) => {
         alert(err);

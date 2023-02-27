@@ -70,7 +70,7 @@ const EditSlide = () => {
           }
         );
 
-        window.location = "/admin/slides";
+        window.location = "/admindfnd001907/slides";
       } catch (error) {
         alert("salam");
       }

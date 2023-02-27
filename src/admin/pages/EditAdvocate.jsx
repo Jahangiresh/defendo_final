@@ -69,7 +69,7 @@ const EditAdvocate = () => {
         });
         toast.success("Vəkil dəyişildi");
 
-        window.location = "/admin/advocates";
+        window.location = "/admindfnd001907/advocates";
       } catch (error) {
         toast.error(error.response.data.Detail);
       }
@@ -99,7 +99,7 @@ const EditAdvocate = () => {
             }}
           />
           <label className="createadvocates__forms__label" htmlFor="firstName">
-           ad
+            ad
           </label>
           <input
             className="createadvocates__forms__input"
@@ -123,7 +123,7 @@ const EditAdvocate = () => {
             defaultValue={advocate.lastName}
           />
           <label className="createadvocates__forms__label" htmlFor="email">
-            Email 
+            Email
           </label>
           <input
             className="createadvocates__forms__input"

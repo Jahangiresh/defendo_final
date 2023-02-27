@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <HeaderDown>
-        <h1>haqqimizda</h1>
+        <h1>haqqımızda</h1>
       </HeaderDown>
       <div className="about">
         <Helmet>

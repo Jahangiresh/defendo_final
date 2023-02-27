@@ -23,7 +23,7 @@ export const createSetting = createAsyncThunk(
         },
       })
       .then(() => {
-        window.location = "/admin/setting";
+        window.location = "/admindfnd001907/setting";
       })
       .catch((err) => {
         alert(err);

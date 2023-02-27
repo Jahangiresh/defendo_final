@@ -25,7 +25,7 @@ const NotFound = () => {
       <div className="custom-container">
         <div className="cus-row">
           <Lottie options={defaultOptions} />
-          <p>bu sehife tapilmadi</p>
+          <p>bu səhifə tapılmadı</p>
           <div className="btns">
             <Link onClick={refreshPage} className="new-btn">
               Yenidən cəhd et

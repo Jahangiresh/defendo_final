@@ -74,7 +74,7 @@ const SettingDetails = () => {
         },
       })
       .then((res) => {
-        window.location = "/admin/setting";
+        window.location = "/admindfnd001907/setting";
       })
       .catch((error) => {
         popUp("Oops...", "error", error.response.data.title);

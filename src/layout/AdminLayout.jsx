@@ -70,33 +70,60 @@ const AdminLayout = () => {
       <Router>
         <Routes>
           {user1 ? (
-            <Route path="/admin" element={<MainLayout />}>
+            <Route path="/admindfnd001907" element={<MainLayout />}>
               <Route index element={<Dashboard />} />
-              <Route path="/admin/services" element={<Services />} />
-              <Route path="/admin/blogs" element={<Blogs />} />
-              <Route path="/admin/blogs/create" element={<CreateBlog />} />
-              <Route path="/admin/services/:id" element={<ServiceDetails />} />
-              <Route path="/admin/setting/:id" element={<SettingDetails />} />
-              <Route path="/admin/service/create" element={<CreateService />} />
+              <Route path="/admindfnd001907/services" element={<Services />} />
+              <Route path="/admindfnd001907/blogs" element={<Blogs />} />
               <Route
-                path="/admin/advocates/create"
+                path="/admindfnd001907/blogs/create"
+                element={<CreateBlog />}
+              />
+              <Route
+                path="/admindfnd001907/services/:id"
+                element={<ServiceDetails />}
+              />
+              <Route
+                path="/admindfnd001907/setting/:id"
+                element={<SettingDetails />}
+              />
+              <Route
+                path="/admindfnd001907/service/create"
+                element={<CreateService />}
+              />
+              <Route
+                path="/admindfnd001907/advocates/create"
                 element={<CreateAdvocate />}
               />
-              <Route path="/admin/advocates/:id" element={<EditAdvocate />} />
-              <Route path="/admin/blogs/:id" element={<EditBlog />} />
+              <Route
+                path="/admindfnd001907/advocates/:id"
+                element={<EditAdvocate />}
+              />
+              <Route path="/admindfnd001907/blogs/:id" element={<EditBlog />} />
 
               {/* <Route path="/admin/login" element={<Login />} /> */}
-              <Route path="/admin/slides" element={<Slides />} />
-              <Route path="/admin/slides/create" element={<CreateSlide />} />
-              <Route path="/admin/slides/:id" element={<EditSlide />} />
+              <Route path="/admindfnd001907/slides" element={<Slides />} />
+              <Route
+                path="/admindfnd001907/slides/create"
+                element={<CreateSlide />}
+              />
+              <Route
+                path="/admindfnd001907/slides/:id"
+                element={<EditSlide />}
+              />
 
-              <Route path="/admin/services" element={<Services />} />
-              <Route path="/admin/setting" element={<Settings />} />
-              <Route path="/admin/setting/create" element={<CreateSetting />} />
-              <Route path="/admin/advocates" element={<Advocates />} />
+              <Route path="/admindfnd001907/services" element={<Services />} />
+              <Route path="/admindfnd001907/setting" element={<Settings />} />
+              <Route
+                path="/admindfnd001907/setting/create"
+                element={<CreateSetting />}
+              />
+              <Route
+                path="/admindfnd001907/advocates"
+                element={<Advocates />}
+              />
             </Route>
           ) : (
-            <Route path="/admin" element={<Login />} />
+            <Route path="/admindfnd001907" element={<Login />} />
           )}
         </Routes>
       </Router>

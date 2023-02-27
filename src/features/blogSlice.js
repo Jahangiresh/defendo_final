@@ -40,15 +40,13 @@ export const createBLog = createAsyncThunk("blogs/postApi", async (payload) => {
       },
     })
     .then(() => {
-      window.location = "/admin/blogs";
+      window.location = "/admindfnd001907/blogs";
     })
     .catch((err) => {
       alert(err);
     });
   return response.data;
 });
-
-
 
 const blogSlice = createSlice({
   name: "blogs",

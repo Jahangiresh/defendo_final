@@ -16,32 +16,20 @@ const UpperHeader = () => {
           <span className="upperheader__container__left__span">
             {settings &&
               settings
-                .filter((setting) => setting.key === "Mobile")
-                .map((s) => (
-                  <>
-                    {s.key} : {s.value}
-                  </>
-                ))}
+                .filter((setting) => setting.key === "Mobil")
+                .map((s) => <>Mobil : {s.value}</>)}
           </span>
           <span className="upperheader__container__left__span home__phone">
             {settings &&
               settings
                 .filter((setting) => setting.key === "Telefon")
-                .map((s) => (
-                  <>
-                    {s.key} : {s.value}
-                  </>
-                ))}
+                .map((s) => <>Telefon : {s.value}</>)}
           </span>
           <span className="upperheader__container__left__span">
             {settings &&
               settings
                 .filter((setting) => setting.key === "Email")
-                .map((s) => (
-                  <>
-                    {s.key} : {s.value}
-                  </>
-                ))}
+                .map((s) => <>Email : {s.value}</>)}
           </span>
         </div>
         <div className="upperheader__container__right">

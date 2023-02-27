@@ -49,7 +49,7 @@ export const createAdvocate = createAsyncThunk(
       })
       .then(() => {
         toast.success("Vəkil yaradıldı");
-        window.location = "/admin/advocates";
+        window.location = "/admindfnd001907/advocates";
       })
       .catch((err) => {
         err.map((e) => {

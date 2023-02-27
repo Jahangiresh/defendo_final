@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./assets/css/app.scss";
-import AdminLayout from "./layout/AdminLayout";
+import AdminLayout from "./layout/AdminLayout.jsx";
 import Layout from "./layout/Layout";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      {pathname.includes("/admin") ? <AdminLayout /> : <Layout />}
+      {pathname.includes("/admindfnd001907") ? <AdminLayout /> : <Layout />}
     </div>
   );
 }

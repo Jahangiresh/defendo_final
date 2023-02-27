@@ -65,7 +65,7 @@ const ProductDetails = () => {
         },
       })
       .then((res) => {
-        window.location = "/admin/services";
+        window.location = "/admindfnd001907/services";
       })
       .catch((error) => {
         alert(error);

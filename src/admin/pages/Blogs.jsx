@@ -96,7 +96,7 @@ export default function Blogs() {
               </TableCell> */}
               <TableCell align="right" className="adminadvocates__icons">
                 <AiOutlineEdit
-                  onClick={() => navigate(`/admin/blogs/${blog.id}`)}
+                  onClick={() => navigate(`/admindfnd001907/blogs/${blog.id}`)}
                   className="edit__icons"
                 />
                 <AiOutlineDelete
@@ -109,7 +109,7 @@ export default function Blogs() {
         </TableBody>
       </Table>
       <button
-        onClick={() => navigate("/admin/blogs/create")}
+        onClick={() => navigate("/admindfnd001907/blogs/create")}
         className="adminadvocates__add"
       >
         blog əlavə et <AiOutlinePlusCircle className="plus__icon" />

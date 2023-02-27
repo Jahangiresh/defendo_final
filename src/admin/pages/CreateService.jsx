@@ -29,7 +29,7 @@ const CreateService = () => {
         },
       })
       .then(() => {
-        window.location = "/admin/services";
+        window.location = "/admindfnd001907/services";
       })
       .catch((error) => {
         popUp("Oops...", "error", "Zəhmət olmasa dataları düzgün daxil edin");

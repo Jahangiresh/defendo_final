@@ -95,7 +95,7 @@ const Home = () => {
                     alt=""
                   />
                 </span>
-                daha etrafli
+                daha ətraflı
               </button>
             </div>
             <div className="home__container__about__row__logo col-lg-3 col-4">
@@ -115,7 +115,7 @@ const Home = () => {
               onClick={() => navigate("/services")}
               className="show__all__button"
             >
-              hamisini gor
+              hamısını gör
             </button>
           </div>
         </div>

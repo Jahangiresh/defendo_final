@@ -93,7 +93,9 @@ export default function Advocates() {
               <TableCell align="right">{advocate.email}</TableCell>
               <TableCell align="right" className="adminadvocates__icons">
                 <AiOutlineEdit
-                  onClick={() => navigate(`/admin/advocates/${advocate.id}`)}
+                  onClick={() =>
+                    navigate(`/admindfnd001907/advocates/${advocate.id}`)
+                  }
                   className="edit__icons"
                 />
                 <AiOutlineDelete
@@ -106,7 +108,7 @@ export default function Advocates() {
         </TableBody>
       </Table>
       <button
-        onClick={() => navigate("/admin/advocates/create")}
+        onClick={() => navigate("/admindfnd001907/advocates/create")}
         className="adminadvocates__add"
       >
         vəkil əlavə et <AiOutlinePlusCircle className="plus__icon" />

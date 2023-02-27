@@ -85,7 +85,7 @@ const EditBlog = () => {
           }
         );
 
-        window.location = "/admin/blogs";
+        window.location = "/admindfnd001907/blogs";
         toast.success("dəyişildi");
       } catch (error) {
         toast.error(error);
@@ -137,7 +137,7 @@ const EditBlog = () => {
           defaultValue={blog.title}
         />
         <label className="createadvocates__forms__label" htmlFor="body">
-         mövzu
+          mövzu
         </label>
         {/* <textarea
           className="createadvocates__forms__input"

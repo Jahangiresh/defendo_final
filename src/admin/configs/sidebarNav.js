@@ -1,50 +1,50 @@
 const sidebarNav = [
   {
-    link: "/admin",
+    link: "/admindfnd001907",
     section: "Home",
     icon: <i className="bx bx-home-alt"></i>,
     text: "Əsas Səhifə",
   },
 
   {
-    link: "/admin/services",
+    link: "/admindfnd001907/services",
     section: "Services",
     icon: <i className="bx bx-receipt"></i>,
     text: "Servislər",
   },
   {
-    link: "/admin/blogs",
+    link: "/admindfnd001907/blogs",
     section: "blogs",
     icon: <i className="bx bx-receipt"></i>,
     text: "Bloglar",
   },
   {
-    link: "/admin/slides",
+    link: "/admindfnd001907/slides",
     section: "slides",
     icon: <i className="bx bx-receipt"></i>,
     text: "Slides",
   },
   // {
-  //   link: "/admin/messages",
+  //   link: "/admindfnd001907/messages",
   //   section: "messages",
   //   icon: <i className="bx bx-cube"></i>,
   //   text: "Messages",
   // },
   {
-    link: "/admin/advocates",
+    link: "/admindfnd001907/advocates",
     section: "advocates",
     icon: <i className="bx bx-cube"></i>,
     text: "Vəkillər",
   },
 
   // {
-  //   link: "/admin/login",
+  //   link: "/admindfnd001907/login",
   //   section: "login",
   //   icon: <i className="bx bx-cog"></i>,
   //   text: "Login",
   // },
   {
-    link: "/admin/setting",
+    link: "/admindfnd001907/setting",
     section: "setting",
     icon: <i className="bx bx-cog"></i>,
     text: "Setting",

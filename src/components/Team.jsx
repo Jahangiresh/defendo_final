@@ -89,7 +89,7 @@ const Team = () => {
           ))}
       </Slider>
       <button onClick={() => navigate("/team")} className="show__all__button">
-        hamisini gor
+        hamısını gör
       </button>
     </div>
   );

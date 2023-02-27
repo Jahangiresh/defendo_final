@@ -57,7 +57,7 @@ const Services = () => {
         <title>service</title>
       </Helmet>
       <Link
-        to={"/admin/service/create"}
+        to={"/admindfnd001907/service/create"}
         style={{
           padding: "5px 10px",
           backgroundColor: "green",
@@ -85,7 +85,7 @@ const Services = () => {
             {services &&
               services.map((service, index) => (
                 <TableRow
-                  onClick={() => navigate(`/admin/services/${service.id}`)}
+                  onClick={() => navigate(`/admindfnd001907/services/${service.id}`)}
                   style={{ cursor: "pointer" }}
                   key={service.id}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}

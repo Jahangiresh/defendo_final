@@ -90,7 +90,7 @@ export default function Slides() {
                 <TableCell align="left">{slide.order}</TableCell>
                 <TableCell align="right" className="adminadvocates__icons">
                   <AiOutlineEdit
-                    onClick={() => navigate(`/admin/slides/${slide.id}`)}
+                    onClick={() => navigate(`/admindfnd001907/slides/${slide.id}`)}
                     className="edit__icons"
                   />
                   <AiOutlineDelete
@@ -104,7 +104,7 @@ export default function Slides() {
         </Table>
       </TableContainer>
       <button
-        onClick={() => navigate("/admin/slides/create")}
+        onClick={() => navigate("/admindfnd001907/slides/create")}
         className="adminadvocates__add"
       >
         slide əlavə et <AiOutlinePlusCircle className="plus__icon" />
