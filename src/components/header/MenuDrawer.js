@@ -10,6 +10,8 @@ import { Link, useNavigate } from "react-router-dom";
 import logoSvg from "../../assets/images/logo.svg";
 import cancelPng from "../../assets/images/cancel.png";
 import { useTranslation } from "react-i18next";
+import { getAllSetting } from "../../features/settingSlice.js";
+import { useSelector } from "react-redux";
 
 export default function MenuDrawer() {
   const { i18n } = useTranslation();
@@ -24,6 +26,7 @@ export default function MenuDrawer() {
     bottom: false,
     right: false,
   });
+  const settings = useSelector(getAllSetting);
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -56,13 +59,22 @@ export default function MenuDrawer() {
         <div className="menudrawer__container custom-container">
           <div className="menudrawer__container__upper">
             <span className="menudrawer__container__upper__span">
-              telefon: 012 451 45 45
+              {settings &&
+                settings
+                  .filter((setting) => setting.key === "Telefon")
+                  .map((s) => <>Telefon: {s.value}</>)}
             </span>
             <span className="menudrawer__container__upper__span">
-              email: example@gmail.com
+              {settings &&
+                settings
+                  .filter((setting) => setting.key === "Email")
+                  .map((s) => <>Email: {s.value}</>)}
             </span>
             <span className="menudrawer__container__upper__span">
-              mobile: +994 55 231 22 11
+              {settings &&
+                settings
+                  .filter((setting) => setting.key === "Mobil")
+                  .map((s) => <>Mobil: {s.value}</>)}
             </span>
             <div className="upperheader__container__right">
               <a
@@ -115,7 +127,7 @@ export default function MenuDrawer() {
             <ul className="menudrawer__container__down__ul">
               <li className="menudrawer__container__down__ul__li">
                 <Link className="link-default" to="/">
-                  <span className="link__span">ana sehifə</span>
+                  <span className="link__span">ana səhifə</span>
                 </Link>
               </li>
               <li className="menudrawer__container__down__ul__li">
@@ -143,7 +155,7 @@ export default function MenuDrawer() {
                   onClick={() => navigate("/contact")}
                   className="menudrawer__container__down__ul__li__button"
                 >
-                  bizimlə əlaqə
+                  Bizimlə Əlaqə
                 </button>
               </li>
             </ul>

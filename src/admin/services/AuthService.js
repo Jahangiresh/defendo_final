@@ -13,7 +13,7 @@ class AuthService {
         if (response.data.accessToken) {
           localStorage.setItem("user", JSON.stringify(response.data));
         }
-        window.location = "/admin";
+        window.location = "/admindfnd001907";
         return response.data;
       })
       .catch((err) => {
@@ -23,7 +23,7 @@ class AuthService {
 
   async logout() {
     localStorage.removeItem("user");
-    window.location = "/admin";
+    window.location = "/admindfnd001907";
   }
 
   async refreshToken() {

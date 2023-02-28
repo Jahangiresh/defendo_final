@@ -26,14 +26,9 @@ const NewsCard = () => {
             </div>
             <div className="newscard__col__content">
               <span className="newscard__col__content__span">
-                <img src={timePng} alt="" /> {blog.createdAt}
+                <img src={timePng} alt="" /> {blog.createdAt.slice(0, 10)}
               </span>
               <h3 className="newscard__col__content__h">{blog.title}</h3>
-              {/* <p className="newscard__col__content__p">
-                {parse(blog.body) > 10
-                  ? parse(blog.body).slice(0, 10) + "..."
-                  : parse(blog.body)}
-              </p> */}
               <button
                 onClick={() => navigate(`/blogs/${blog.id}`)}
                 className="newscard__col__content__button"

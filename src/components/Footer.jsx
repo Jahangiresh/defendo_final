@@ -33,7 +33,30 @@ const Footer = () => {
                       .map((s) => (
                         <>
                           Telefon :{" "}
-                          <a href="tel:+994 55 465 22 52">{s.value}</a>
+                          <a
+                            href={`tel:${s.value}`}
+                            style={{ marginLeft: "5px" }}
+                          >
+                            {" "}
+                            {s.value}
+                          </a>
+                        </>
+                      ))}
+                </li>
+                <li className="number">
+                  {settings &&
+                    settings
+                      .filter((setting) => setting.key === "Mobil")
+                      .map((s) => (
+                        <>
+                          Mobil :{" "}
+                          <a
+                            href={`tel:${s.value}`}
+                            style={{ marginLeft: "5px" }}
+                          >
+                            {" "}
+                            {s.value}
+                          </a>
                         </>
                       ))}
                 </li>
@@ -44,7 +67,14 @@ const Footer = () => {
                         .filter((setting) => setting.key === "Email")
                         .map((s) => (
                           <>
-                            Email : <a href={`mailto:${s.value}`}>{s.value}</a>
+                            Email :{" "}
+                            <a
+                              href={`mailto:${s.value}`}
+                              style={{ marginLeft: "5px" }}
+                            >
+                              {" "}
+                              {s.value}
+                            </a>
                           </>
                         ))}
                   </li>
