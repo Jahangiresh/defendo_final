@@ -66,7 +66,7 @@ export default function MenuDrawer() {
             </span>
             <div className="upperheader__container__right">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/arsmika?mibextid=LQQJ4d"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icons__href"
@@ -82,7 +82,7 @@ export default function MenuDrawer() {
                 <img src={twitterPng} alt="" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/de_fendo_official/?igshid=YmMyMTA2M2Y="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icons__href"

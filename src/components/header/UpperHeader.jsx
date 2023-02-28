@@ -35,7 +35,7 @@ const UpperHeader = () => {
         <div className="upperheader__container__right">
           <span className="upperheader__container__right__span">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/arsmika?mibextid=LQQJ4d"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -53,7 +53,7 @@ const UpperHeader = () => {
           </span>{" "}
           <span className="upperheader__container__right__span">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/de_fendo_official/?igshid=YmMyMTA2M2Y="
               target="_blank"
               rel="noopener noreferrer"
             >

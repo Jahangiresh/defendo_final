@@ -92,7 +92,12 @@ const SingleNews = () => {
               </h3>
               <div className="singlenews__container__row__left__share__buttons">
                 <button className="singlenews__container__row__left__share__buttons__button button__facebook">
-                  <img src={facebookIcon} alt="" /> facebook
+                  <a
+                    className="link-default"
+                    href="https://www.facebook.com/arsmika?mibextid=LQQJ4d"
+                  >
+                    <img src={facebookIcon} alt="" /> facebook
+                  </a>{" "}
                 </button>
                 <button className="singlenews__container__row__left__share__buttons__button button__linkedin">
                   <img src={linkedinIcon} alt="" /> linkedin
