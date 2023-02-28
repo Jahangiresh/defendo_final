@@ -9,7 +9,7 @@ const Services = () => {
     <>
       <HeaderDown>
         <h1>Xidmətlər</h1>
-        <p>Peşəkar xidmətlərimizlə tanış olun.</p>
+        <p>xidmətlərimizlə tanış olun</p>
       </HeaderDown>
       <main>
         <Helmet>

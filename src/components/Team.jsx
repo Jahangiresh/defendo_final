@@ -55,7 +55,7 @@ const Team = () => {
   ) : (
     <div className="team">
       <h3 className="team__title">komandamız</h3>
-      <p className="team__intro">pesekar komandamiz ile tanish ol</p>
+      <p className="team__intro">peşəkar komandamız ilə tanış ol</p>
 
       <Slider className="team__slider" {...teamSettings}>
         {advocates &&
@@ -68,9 +68,6 @@ const Team = () => {
                     alt="adv.jpg"
                   />
                   <ul className="team__slider__card__image__ul">
-                    <li>
-                      <img src={mapPng} alt="" /> Ak. Həsən Əliyev 82F
-                    </li>
                     <li>
                       <img src={phonePng} alt="" />
                       {advocate.phoneNumber}

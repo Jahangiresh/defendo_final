@@ -34,18 +34,15 @@ const AdvocateCard = () => {
               />
               <ul className="advocatecard__slider__card__image__ul">
                 <li>
-                  <img src={mapPng} alt="" /> Ak. Həsən Əliyev 82F
+                  <img src={phonePng} alt="" /> {item.phoneNumber}
                 </li>
                 <li>
-                  <img src={phonePng} alt="" /> +994 50 555-55-55
-                </li>
-                <li>
-                  <img src={messagePng} alt="" /> officedefendo@gmail.com
+                  <img src={messagePng} alt="" /> {item.email}
                 </li>
               </ul>
             </div>
             <div className="advocatecard__slider__card__name">
-              {item.firstName}
+              {item.firstName} {item.lastName}
             </div>
           </Link>
         ))}

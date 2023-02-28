@@ -122,7 +122,9 @@ const Contact = () => {
                         .map((s) => (
                           <div>
                             <h5>Email</h5>
-                            <p>{s.value}</p>
+                            <p style={{ textTransform: "lowercase" }}>
+                              {s.value}
+                            </p>
                           </div>
                         ))}
                   </div>

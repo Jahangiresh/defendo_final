@@ -17,14 +17,16 @@ const Home = () => {
   const slides = useSelector(getAllSlides);
   const status = useSelector(getStatus);
   var settings = {
-    infinite: false,
-    speed: 100,
+    infinite: true,
+    speed: 2000,
+    cssEase: "ease-in-out",
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: false,
+    pauseOnHover: false,
   };
   const navigate = useNavigate();
   return status === "pending" ? (
@@ -59,12 +61,6 @@ const Home = () => {
                 />
               </div>
             ))}
-          {/* <div>
-            <img src={coverHomePng} alt="" />
-          </div>{" "}
-          <div>
-            <img src={coverHomePng} alt="" />
-          </div> */}
         </Slider>
 
         <div className="home__container custom-container">
@@ -74,15 +70,14 @@ const Home = () => {
                 Haqqımızda
               </h3>
               <p className="home__container__about__row__info">
-                Azərbaycan Respublikasının Vəkillər Kollegiyasının əsas vəzifəsi
-                hər bir şəxsin hüquq və azadlıqlarının, qanunla qorunan
-                mənafelərinin müdafiə edilməsindən, onlara peşəkar, yüksək
-                keyfiyyətli, vicdanlı hüquqi yardım göstərilməsini təmin
-                etməkdən, vəkillik peşəsinin nüfuzunu yüksəltməkdən ibarətdir.
-                Azərbaycan Respublikası Vəkillər Kollegiyasının təşkili və
-                fəaliyyəti "Vəkillər və vəkillik fəaliyyəti haqqında" Azərbaycan
-                Respublikasının Qanunu və ona müvafiq olaraq qəbul edilmiş
-                Vəkillər Kollegiyasının Nizamnaməsi ilə müəyyən edilir
+                "De Fendo" Vəkil Bürosunun ilk təsisçiləri, 4 dost vəkil - Azər
+                Tanrıverdi, Arslan Mikayılov, İlqar Eyyubov və Seymur
+                Səfərovdur. Büronun yaradılmasında məqsəd müasir tələblərə cavab
+                verən şəraitdə vətəndaşlara daha keyfiyyətli və effektiv hüquqi
+                xidmətin göstərilməsinin təmin edilməsi idi. Birgə səylərimiz
+                nəticəsində "De Fendo" Vəkil Bürosu 10.02.2022-ci ildə rəsmi
+                dövlət qeydiyyatından keçdi və ilk olaraq Bakı şəhəri, Ziya
+                Bünyadov prospektinda yerləşən ofisdə fəaliyyatə başladı...
               </p>
               <button
                 onClick={() => navigate("/about")}
