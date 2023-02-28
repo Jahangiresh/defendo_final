@@ -45,6 +45,7 @@ const SingleNews = () => {
       try {
         dispatch({ type: "FETCH_REQ" });
         const resp = await axios.get(`https://defendovb.az/api/v1/blogs/${id}`);
+
         dispatch({ type: "FETCH_SUCCES", payload: resp.data });
       } catch (error) {
         dispatch({ type: "FETCH_FAIL" });
@@ -66,13 +67,16 @@ const SingleNews = () => {
         <div className="singlenews__container__row row">
           <div className="singlenews__container__row__left col-8">
             <p className="singlenews__container__row__left__p">
-              <img src={timePng} alt="" /> {item.createdAt}
+              <img src={timePng} alt="" /> {item.createdAt.substring(0, 10)}
             </p>
             <h3 className="singlenews__container__row__left__h">
               {item.title}
             </h3>
             <div className="singlenews__container__row__left__img">
-              <img src={newsPng} alt="" />
+              <img
+                src={`https://defendovb.az/api/v1/files?filepath=${item.image.filePath}`}
+                alt=""
+              />
             </div>
             {/* <h3 className="singlenews__container__row__left__xulase">Xülasə</h3>
             <p className="singlenews__container__row__left__xulaseP">
@@ -103,7 +107,7 @@ const SingleNews = () => {
             <ul className="singlenews__container__row__right__content">
               <li className="singlenews__container__row__right__content__li">
                 <p className="singlenews__container__row__left__p right__p">
-                  <img src={timePng} alt="" /> {item.createdAt}
+                  <img src={timePng} alt="" /> {item.createdAt.substring(0, 10)}
                 </p>
                 <h3 className="singlenews__container__row__right__content__li__title title1">
                   {item.title}
@@ -119,7 +123,8 @@ const SingleNews = () => {
                       className="singlenews__container__row__right__content__li link-default"
                     >
                       <p className="singlenews__container__row__left__p right__p">
-                        <img src={timePng} alt="" /> {it.createdAt}
+                        <img src={timePng} alt="" />{" "}
+                        {it.createdAt.substring(0, 10)}
                       </p>
                       <h3 className="singlenews__container__row__right__content__li__title ">
                         {it.title}
