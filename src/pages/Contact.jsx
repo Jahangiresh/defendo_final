@@ -73,7 +73,7 @@ const Contact = () => {
               <div className="map">
                 <iframe
                   title="address"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d97221.49633886272!2d49.8072587!3d40.4050456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d40a035a6bd%3A0xa8c2cbf267a83fbd!2sHeydar%20Aliyev%20Centre!5e0!3m2!1sen!2s!4v1675850932013!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.3564836213595!2d49.84056162835589!3d40.40095291337205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d612cc1de03%3A0x1ca48c16122aeebe!2s82f%20Academician%20Hasan%20Aliyev%20St%2C%20Baku!5e0!3m2!1sen!2saz!4v1677598965718!5m2!1sen!2saz"
                 ></iframe>
               </div>
               <div className="contact-info">
