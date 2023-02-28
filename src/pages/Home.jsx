@@ -40,7 +40,7 @@ const Home = () => {
         <div className="home__cover__content">
           <h1 className="home__cover__content__title">de fendo vəkil bürosu</h1>
           <p className="home__cover__content__intro">
-            Bütün növ hüquqi xidmətlər göstərən konsaltinq şirkətidir
+            Hüquqlarınızın ən layiqli təminatçısı
           </p>
           <button
             onClick={() => navigate("/contact")}

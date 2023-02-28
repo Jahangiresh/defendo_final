@@ -79,9 +79,6 @@ const SingleAdvocate = () => {
               <div className="singleadvocate__container__row__left__details">
                 <ul className="singleadvocate__container__row__left__details__ul">
                   <li className="singleadvocate__container__row__left__details__ul__li">
-                    <img src={mapPng} alt="" /> Ak. Həsən Əliyev 82F
-                  </li>
-                  <li className="singleadvocate__container__row__left__details__ul__li">
                     <img src={phonePng} alt="" /> {advocate.phoneNumber}
                   </li>
                   <li className="singleadvocate__container__row__left__details__ul__li">
