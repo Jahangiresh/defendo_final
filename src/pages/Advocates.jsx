@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import AdvocateCard from "../components/AdvocateCard";
 import HeaderDown from "../components/header/HeaderDown";
+import rolePng from "../assets/images/role.png";
 
 const Advocates = () => {
   return (

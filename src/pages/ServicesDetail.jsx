@@ -70,7 +70,7 @@ const ServicesDetail = () => {
                   <p>{service.description}</p>
                 </div>
                 <div className="contact">
-                  <a className="link" href="#">
+                  <a className="link" to="/contact">
                     Bizimlə əlaqə
                   </a>
                 </div>
