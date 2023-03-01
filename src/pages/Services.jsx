@@ -1,10 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 import "../assets/css/services.scss";
 import HeaderDown from "../components/header/HeaderDown";
 import ServiceCard from "../components/ServiceCard";
+import "../assets/css/servicedetail.scss";
 
 const Services = () => {
+  const navigate = useNavigate();
   return (
     <>
       <HeaderDown>

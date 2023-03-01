@@ -8,6 +8,7 @@ import messagePng from "../assets/images/messagePng.png";
 import AdvocateCard from "../components/AdvocateCard";
 import HeaderDown from "../components/header/HeaderDown";
 import LoadingBox from "../components/LoadingBox";
+
 import { Helmet } from "react-helmet";
 const reducer = (state, action) => {
   switch (action.type) {
@@ -78,6 +79,14 @@ const SingleAdvocate = () => {
               </div>
               <div className="singleadvocate__container__row__left__details">
                 <ul className="singleadvocate__container__row__left__details__ul">
+                  <li>
+                    {/* <img
+                      style={{ width: "20px", height: "20px" }}
+                      src=""
+                      alt=""
+                    />{" "} */}
+                    {advocate.role}
+                  </li>
                   <li className="singleadvocate__container__row__left__details__ul__li">
                     <img src={phonePng} alt="" /> {advocate.phoneNumber}
                   </li>

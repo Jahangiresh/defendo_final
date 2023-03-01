@@ -69,6 +69,14 @@ const Team = () => {
                   />
                   <ul className="team__slider__card__image__ul">
                     <li>
+                      {/* <img
+                      style={{ width: "20px", height: "20px" }}
+                      src=""
+                      alt=""
+                    />{" "} */}
+                      {advocate.role}
+                    </li>
+                    <li>
                       <img src={phonePng} alt="" />
                       {advocate.phoneNumber}
                     </li>
