@@ -69,14 +69,6 @@ const Team = () => {
                   />
                   <ul className="team__slider__card__image__ul">
                     <li>
-                      {/* <img
-                      style={{ width: "20px", height: "20px" }}
-                      src=""
-                      alt=""
-                    />{" "} */}
-                      {advocate.role}
-                    </li>
-                    <li>
                       <img src={phonePng} alt="" />
                       {advocate.phoneNumber}
                     </li>
@@ -88,6 +80,7 @@ const Team = () => {
                 </div>
                 <div className="team__slider__card__name">
                   {advocate.firstName} {advocate.lastName}
+                  <p className="role__text text-lowercase">{advocate.role}</p>
                 </div>
               </div>
             </Link>

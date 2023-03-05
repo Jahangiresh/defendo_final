@@ -34,14 +34,6 @@ const AdvocateCard = () => {
               />
               <ul className="advocatecard__slider__card__image__ul">
                 <li>
-                  {/* <img
-                      style={{ width: "20px", height: "20px" }}
-                      src=""
-                      alt=""
-                    />{" "} */}
-                  {item.role}
-                </li>
-                <li>
                   <img src={phonePng} alt="" /> {item.phoneNumber}
                 </li>
                 <li>
@@ -51,6 +43,7 @@ const AdvocateCard = () => {
             </div>
             <div className="advocatecard__slider__card__name">
               {item.firstName} {item.lastName}
+              <p className="role__text text-lowercase">{item.role}</p>
             </div>
           </Link>
         ))}
